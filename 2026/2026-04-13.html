@@ -35,12 +35,18 @@ main{max-width:860px;margin:0 auto;padding:24px 16px 60px}
 .art-body ul{padding-left:1.4em;margin:4px 0}
 .art-body li{margin:3px 0}
 .art-body strong{font-weight:700}
+.stars{display:inline-flex;gap:2px;cursor:pointer;user-select:none;margin-top:6px}
+.star{font-size:1em;color:#d1d5db;transition:color .1s;padding:0 1px;line-height:1}
+.star.on{color:#f59e0b}
+.exp-btn{cursor:pointer;font:inherit;background:#fff8e1;border-color:#ffe082;color:#f57f17}
+.exp-btn:hover{background:#fff3cd}
+.art-ft{padding:8px 0 0;border-top:1px solid var(--border);margin-top:10px}
 </style>
 </head>
 <body>
 <div id="hd">
   <span class="logo">🌐 国際情勢ダイジェスト</span>
-  <nav><a class="nb" href="../index.html">📋 バックナンバー</a></nav>
+  <nav><a class="nb" href="../index.html">📋 バックナンバー</a><button class="nb exp-btn" onclick="exportRatings()">⭐ 評価エクスポート</button></nav>
 </div>
 <div class="hero">
   <div class="hero-in">
@@ -49,8 +55,44 @@ main{max-width:860px;margin:0 auto;padding:24px 16px 60px}
     <div class="hero-stats"><div class="stat">📰 記事 <strong>1 件</strong></div></div>
   </div>
 </div>
-<main><div class="sec"><div class="sec-hd" style="background:#e3f2fd;border:1px solid #bbdefb;color:#1565c0">🌍 国際政治・地政学</div><div class="art"><div class="art-ttl"><a href="https://foreignpolicy.com/2026/04/12/why-viktor-orbans-fidesz-party-lost/" target="_blank" style="color:#1565c0">Why Viktor Orban’s Fidesz Party Lost</a></div><div class="art-meta"><span>Foreign Policy</span><span>📅 日時不明</span></div><div class="art-body"><p>【注意】提供された「記事の概要・本文」がリード文のみであるため、この要約はタイトルとリード文から得られる情報に基づいて推測されたものであり、実際の記事詳細とは異なる可能性があります。</p></div></div>
+<main><div class="sec"><div class="sec-hd" style="background:#e3f2fd;border:1px solid #bbdefb;color:#1565c0">🌍 国際政治・地政学</div><div class="art"><div class="art-ttl"><a href="https://foreignpolicy.com/2026/04/12/why-viktor-orbans-fidesz-party-lost/" target="_blank" style="color:#1565c0">Why Viktor Orban’s Fidesz Party Lost</a></div><div class="art-meta"><span>Foreign Policy</span><span>📅 2026年4月12日 20:24 UTC</span></div><div class="art-body"><p>【注意】提供された「記事の概要・本文」がリード文のみであるため、この要約はタイトルとリード文から得られる情報に基づいて推測されたものであり、実際の記事詳細とは異なる可能性があります。</p></div><div class="art-ft"><div class="stars" data-url="https://foreignpolicy.com/2026/04/12/why-viktor-orbans-fidesz-party-lost/" data-title="Why Viktor Orban’s Fidesz Party Lost" data-src="Foreign Policy" data-date="2026-04-13"><span class="star" data-n="1">★</span><span class="star" data-n="2">★</span><span class="star" data-n="3">★</span><span class="star" data-n="4">★</span><span class="star" data-n="5">★</span></div></div></div>
 </div>
 </main>
+<script>
+const _RK='digest_ratings';
+function _lr(){try{return JSON.parse(localStorage.getItem(_RK)||'{}')}catch(e){return{}}}
+function _sv(url,r,t,s,d){const m=_lr();if(r===0)delete m[url];else m[url]={rating:r,title:(t||'').substring(0,80),source:s,date:d};localStorage.setItem(_RK,JSON.stringify(m))}
+function _us(el,n){el.querySelectorAll('.star').forEach(s=>{s.classList.toggle('on',parseInt(s.dataset.n)<=n)})}
+function initStars(){
+  const m=_lr();
+  document.querySelectorAll('.stars').forEach(el=>{
+    const url=el.dataset.url;
+    if(m[url])_us(el,m[url].rating);
+    el.addEventListener('mouseleave',()=>_us(el,(m[url]||{}).rating||0));
+    el.querySelectorAll('.star').forEach(s=>{
+      const n=parseInt(s.dataset.n);
+      s.addEventListener('mouseenter',()=>_us(el,n));
+      s.addEventListener('click',e=>{
+        e.preventDefault();e.stopPropagation();
+        const cur=(m[url]||{}).rating||0,nr=cur===n?0:n;
+        _sv(url,nr,el.dataset.title,el.dataset.src,el.dataset.date);
+        if(nr)m[url]={rating:nr};else delete m[url];
+        _us(el,nr);
+      });
+    });
+  });
+}
+function exportRatings(){
+  const m=_lr(),cnt=Object.keys(m).length;
+  if(!cnt){alert('評価データがありません。★を付けてからエクスポートしてください。');return;}
+  const blob=new Blob([JSON.stringify(m,null,2)],{type:'application/json'});
+  const u=URL.createObjectURL(blob);
+  const a=document.createElement('a');
+  a.href=u;a.download='ratings.json';document.body.appendChild(a);a.click();
+  document.body.removeChild(a);URL.revokeObjectURL(u);
+  alert(cnt+'件の評価をエクスポートしました。scripts/ratings.json として保存してください。');
+}
+document.addEventListener('DOMContentLoaded',initStars);
+</script>
 </body>
 </html>

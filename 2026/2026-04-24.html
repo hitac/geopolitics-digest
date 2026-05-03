@@ -35,22 +35,27 @@ main{max-width:860px;margin:0 auto;padding:24px 16px 60px}
 .art-body ul{padding-left:1.4em;margin:4px 0}
 .art-body li{margin:3px 0}
 .art-body strong{font-weight:700}
+.stars{display:inline-flex;gap:2px;cursor:pointer;user-select:none;margin-top:6px}
+.star{font-size:1em;color:#d1d5db;transition:color .1s;padding:0 1px;line-height:1}
+.star.on{color:#f59e0b}
+.exp-btn{cursor:pointer;font:inherit;background:#fff8e1;border-color:#ffe082;color:#f57f17}
+.exp-btn:hover{background:#fff3cd}
+.art-ft{padding:8px 0 0;border-top:1px solid var(--border);margin-top:10px}
 </style>
 </head>
 <body>
 <div id="hd">
   <span class="logo">🌐 国際情勢ダイジェスト</span>
-  <nav><a class="nb" href="../index.html">📋 バックナンバー</a></nav>
+  <nav><a class="nb" href="../index.html">📋 バックナンバー</a><button class="nb exp-btn" onclick="exportRatings()">⭐ 評価エクスポート</button></nav>
 </div>
 <div class="hero">
   <div class="hero-in">
     <div class="hero-date">📅 2026-04-24</div>
     <h1>デイリーダイジェスト</h1>
-    <div class="hero-stats"><div class="stat">📰 記事 <strong>10 件</strong></div></div>
+    <div class="hero-stats"><div class="stat">📰 記事 <strong>2 件</strong></div></div>
   </div>
 </div>
-<main><div class="sec"><div class="sec-hd" style="background:#e3f2fd;border:1px solid #bbdefb;color:#1565c0">🌍 国際政治・地政学</div><div class="art"><div class="art-ttl"><a href="https://foreignpolicy.com/2026/04/24/news-quiz-north-korea-taiwan-united-nations-candidates-pope-leo/" target="_blank" style="color:#1565c0">What in the World?</a></div><div class="art-meta"><span>Foreign Policy</span><span>📅 日時不明</span></div><div class="art-body"><p><em>要約エラー: 503 UNAVAILABLE. {&#x27;error&#x27;: {&#x27;code&#x27;: 503, &#x27;message&#x27;: &#x27;This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.&#x27;, &#x27;status&#x27;: &#x27;UNAVAILABLE&#x27;}}</em></p></div></div>
-<div class="art"><div class="art-ttl"><a href="https://thediplomat.com/2026/04/what-chinas-new-county-reveals-about-its-afghanistan-policy/" target="_blank" style="color:#1565c0">What China’s New County Reveals About Its Afghanistan Policy</a></div><div class="art-meta"><span>The Diplomat</span><span>📅 日時不明</span></div><div class="art-body"><p>以下、記事の要約です。</p>
+<main><div class="sec"><div class="sec-hd" style="background:#e3f2fd;border:1px solid #bbdefb;color:#1565c0">🌍 国際政治・地政学</div><div class="art"><div class="art-ttl"><a href="https://thediplomat.com/2026/04/what-chinas-new-county-reveals-about-its-afghanistan-policy/" target="_blank" style="color:#1565c0">What China’s New County Reveals About Its Afghanistan Policy</a></div><div class="art-meta"><span>The Diplomat</span><span>📅 2026年4月25日 00:00 UTC</span></div><div class="art-body"><p>以下、記事の要約です。</p>
 <br>
 <ul>
 <li>  <strong>主題</strong>: 中国が新疆ウイグル自治区に新設した行政区画が、同国のアフガニスタン政策および中央アジアとの統合強化に向けた戦略的意図を示唆している。</li>
@@ -71,15 +76,9 @@ main{max-width:860px;margin:0 auto;padding:24px 16px 60px}
 <br>
 <ul>
 <li>  <strong>地政学的含意</strong>: 中国は、アフガニスタンと中央アジアにおける経済的・安全保障的リーダーシップを確立し、ユーラシア大陸における地域統合を主導する姿勢を強めている。これは、国際社会がアフガニスタンに慎重な姿勢を保つ中、中国が戦略的利害に基づいて地域関与を深めることで、新たな地政学的秩序が形成されつつあることを示唆している。</li>
-</ul></div></div>
-<div class="art"><div class="art-ttl"><a href="https://foreignpolicy.com/2026/04/24/conservation-environment-extinction-living-planet/" target="_blank" style="color:#1565c0">The Planet Is Doing Better Than You Think</a></div><div class="art-meta"><span>Foreign Policy</span><span>📅 日時不明</span></div><div class="art-body"><p><em>要約エラー: 503 UNAVAILABLE. {&#x27;error&#x27;: {&#x27;code&#x27;: 503, &#x27;message&#x27;: &#x27;This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.&#x27;, &#x27;status&#x27;: &#x27;UNAVAILABLE&#x27;}}</em></p></div></div>
-<div class="art"><div class="art-ttl"><a href="https://thediplomat.com/2026/04/the-quad-isnt-dead-its-just-moved-out-of-the-spotlight/" target="_blank" style="color:#1565c0">The Quad Isn’t Dead. It’s Just Moved Out of the Spotlight.</a></div><div class="art-meta"><span>The Diplomat</span><span>📅 日時不明</span></div><div class="art-body"><p><em>要約エラー: 503 UNAVAILABLE. {&#x27;error&#x27;: {&#x27;code&#x27;: 503, &#x27;message&#x27;: &#x27;This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.&#x27;, &#x27;status&#x27;: &#x27;UNAVAILABLE&#x27;}}</em></p></div></div>
+</ul></div><div class="art-ft"><div class="stars" data-url="https://thediplomat.com/2026/04/what-chinas-new-county-reveals-about-its-afghanistan-policy/" data-title="What China’s New County Reveals About Its Afghanistan Policy" data-src="The Diplomat" data-date="2026-04-24"><span class="star" data-n="1">★</span><span class="star" data-n="2">★</span><span class="star" data-n="3">★</span><span class="star" data-n="4">★</span><span class="star" data-n="5">★</span></div></div></div>
 </div>
-<div class="sec"><div class="sec-hd" style="background:#e8f5e9;border:1px solid #c8e6c9;color:#2e7d32">🔬 科学・テクノロジー</div><div class="art"><div class="art-ttl"><a href="https://www.technologyreview.com/2026/04/24/1136422/why-deepseeks-v4-matters/" target="_blank" style="color:#2e7d32">Three reasons why DeepSeek’s new model V4 matters</a></div><div class="art-meta"><span>MIT Technology Review</span><span>📅 日時不明</span></div><div class="art-body"><p><em>要約エラー: 503 UNAVAILABLE. {&#x27;error&#x27;: {&#x27;code&#x27;: 503, &#x27;message&#x27;: &#x27;This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.&#x27;, &#x27;status&#x27;: &#x27;UNAVAILABLE&#x27;}}</em></p></div></div>
-<div class="art"><div class="art-ttl"><a href="https://www.quantamagazine.org/a-new-type-of-neuroplasticity-rewires-the-brain-after-a-single-experience-20260424/" target="_blank" style="color:#2e7d32">A New Type of Neuroplasticity Rewires the Brain After a Single Experience</a></div><div class="art-meta"><span>Quanta Magazine</span><span>📅 日時不明</span></div><div class="art-body"><p><em>要約エラー: 503 UNAVAILABLE. {&#x27;error&#x27;: {&#x27;code&#x27;: 503, &#x27;message&#x27;: &#x27;This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.&#x27;, &#x27;status&#x27;: &#x27;UNAVAILABLE&#x27;}}</em></p></div></div>
-</div>
-<div class="sec"><div class="sec-hd" style="background:#f3e5f5;border:1px solid #e1bee7;color:#6a1b9a">🎬 映画・映像芸術</div><div class="art"><div class="art-ttl"><a href="https://www.rogerebert.com/video-games/saros-ps5-video-game-review" target="_blank" style="color:#6a1b9a">Sony’s Exclusive “Saros” is One of the Year’s Must-Play Games</a></div><div class="art-meta"><span>RogerEbert.com</span><span>📅 日時不明</span></div><div class="art-body"><p><em>要約エラー: 503 UNAVAILABLE. {&#x27;error&#x27;: {&#x27;code&#x27;: 503, &#x27;message&#x27;: &#x27;This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.&#x27;, &#x27;status&#x27;: &#x27;UNAVAILABLE&#x27;}}</em></p></div></div>
-<div class="art"><div class="art-ttl"><a href="https://www.indiewire.com/features/interviews/pete-ohs-director-interview-erupcja-charli-xcx-1235189495/" target="_blank" style="color:#6a1b9a">Pete Ohs Wants Filmmaking to Be Fun — and for You to Edit His Movies</a></div><div class="art-meta"><span>IndieWire</span><span>📅 日時不明</span></div><div class="art-body"><p><strong>主題</strong>: ピート・オーズ監督の、観客参加型および共同制作を促進する革新的な映画制作哲学とその実践について。</p>
+<div class="sec"><div class="sec-hd" style="background:#f3e5f5;border:1px solid #e1bee7;color:#6a1b9a">🎬 映画・映像芸術</div><div class="art"><div class="art-ttl"><a href="https://www.indiewire.com/features/interviews/pete-ohs-director-interview-erupcja-charli-xcx-1235189495/" target="_blank" style="color:#6a1b9a">Pete Ohs Wants Filmmaking to Be Fun — and for You to Edit His Movies</a></div><div class="art-meta"><span>IndieWire</span><span>📅 2026年4月24日 22:00 UTC</span></div><div class="art-body"><p><strong>主題</strong>: ピート・オーズ監督の、観客参加型および共同制作を促進する革新的な映画制作哲学とその実践について。</p>
 <br>
 <p><strong>背景・文脈</strong>: 現代の映像制作は、デジタル技術の普及により表現の可能性が広がり、観客の期待値と関与の形も変容している。オーズ監督の試みは、従来の制作者中心のパラダイムを問い直し、よりオープンで共同的な創造プロセスを模索する点で重要性を帯びる。</p>
 <br>
@@ -94,10 +93,44 @@ main{max-width:860px;margin:0 auto;padding:24px 16px 60px}
 <br>
 <ul>
 <li><strong>批評的視点</strong>: オーズ監督の試みは、映画制作における所有権と創造性の概念を問い直し、デジタル時代における共同体主導型（community-driven）の映像表現の新たな地平を開くものとして評価される。</li>
-</ul></div></div>
-<div class="art"><div class="art-ttl"><a href="https://www.indiewire.com/news/breaking-news/wga-members-ratify-new-4-year-deal-film-tv-studios-1235190688/" target="_blank" style="color:#6a1b9a">WGA Members Ratify New 4-Year Deal with Film and TV Studios</a></div><div class="art-meta"><span>IndieWire</span><span>📅 日時不明</span></div><div class="art-body"><p><em>要約エラー: 503 UNAVAILABLE. {&#x27;error&#x27;: {&#x27;code&#x27;: 503, &#x27;message&#x27;: &#x27;This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.&#x27;, &#x27;status&#x27;: &#x27;UNAVAILABLE&#x27;}}</em></p></div></div>
-<div class="art"><div class="art-ttl"><a href="https://www.indiewire.com/features/commentary/stranger-things-tales-from-85-saturday-morning-cartoons-1235190670/" target="_blank" style="color:#6a1b9a">‘Stranger Things: Tales from ’85’ Should Be More Like a Saturday Morning Cartoon</a></div><div class="art-meta"><span>IndieWire</span><span>📅 日時不明</span></div><div class="art-body"><p><em>要約エラー: 503 UNAVAILABLE. {&#x27;error&#x27;: {&#x27;code&#x27;: 503, &#x27;message&#x27;: &#x27;This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.&#x27;, &#x27;status&#x27;: &#x27;UNAVAILABLE&#x27;}}</em></p></div></div>
+</ul></div><div class="art-ft"><div class="stars" data-url="https://www.indiewire.com/features/interviews/pete-ohs-director-interview-erupcja-charli-xcx-1235189495/" data-title="Pete Ohs Wants Filmmaking to Be Fun — and for You to Edit His Movies" data-src="IndieWire" data-date="2026-04-24"><span class="star" data-n="1">★</span><span class="star" data-n="2">★</span><span class="star" data-n="3">★</span><span class="star" data-n="4">★</span><span class="star" data-n="5">★</span></div></div></div>
 </div>
 </main>
+<script>
+const _RK='digest_ratings';
+function _lr(){try{return JSON.parse(localStorage.getItem(_RK)||'{}')}catch(e){return{}}}
+function _sv(url,r,t,s,d){const m=_lr();if(r===0)delete m[url];else m[url]={rating:r,title:(t||'').substring(0,80),source:s,date:d};localStorage.setItem(_RK,JSON.stringify(m))}
+function _us(el,n){el.querySelectorAll('.star').forEach(s=>{s.classList.toggle('on',parseInt(s.dataset.n)<=n)})}
+function initStars(){
+  const m=_lr();
+  document.querySelectorAll('.stars').forEach(el=>{
+    const url=el.dataset.url;
+    if(m[url])_us(el,m[url].rating);
+    el.addEventListener('mouseleave',()=>_us(el,(m[url]||{}).rating||0));
+    el.querySelectorAll('.star').forEach(s=>{
+      const n=parseInt(s.dataset.n);
+      s.addEventListener('mouseenter',()=>_us(el,n));
+      s.addEventListener('click',e=>{
+        e.preventDefault();e.stopPropagation();
+        const cur=(m[url]||{}).rating||0,nr=cur===n?0:n;
+        _sv(url,nr,el.dataset.title,el.dataset.src,el.dataset.date);
+        if(nr)m[url]={rating:nr};else delete m[url];
+        _us(el,nr);
+      });
+    });
+  });
+}
+function exportRatings(){
+  const m=_lr(),cnt=Object.keys(m).length;
+  if(!cnt){alert('評価データがありません。★を付けてからエクスポートしてください。');return;}
+  const blob=new Blob([JSON.stringify(m,null,2)],{type:'application/json'});
+  const u=URL.createObjectURL(blob);
+  const a=document.createElement('a');
+  a.href=u;a.download='ratings.json';document.body.appendChild(a);a.click();
+  document.body.removeChild(a);URL.revokeObjectURL(u);
+  alert(cnt+'件の評価をエクスポートしました。scripts/ratings.json として保存してください。');
+}
+document.addEventListener('DOMContentLoaded',initStars);
+</script>
 </body>
 </html>

@@ -35,22 +35,27 @@ main{max-width:860px;margin:0 auto;padding:24px 16px 60px}
 .art-body ul{padding-left:1.4em;margin:4px 0}
 .art-body li{margin:3px 0}
 .art-body strong{font-weight:700}
+.stars{display:inline-flex;gap:2px;cursor:pointer;user-select:none;margin-top:6px}
+.star{font-size:1em;color:#d1d5db;transition:color .1s;padding:0 1px;line-height:1}
+.star.on{color:#f59e0b}
+.exp-btn{cursor:pointer;font:inherit;background:#fff8e1;border-color:#ffe082;color:#f57f17}
+.exp-btn:hover{background:#fff3cd}
+.art-ft{padding:8px 0 0;border-top:1px solid var(--border);margin-top:10px}
 </style>
 </head>
 <body>
 <div id="hd">
   <span class="logo">🌐 国際情勢ダイジェスト</span>
-  <nav><a class="nb" href="../index.html">📋 バックナンバー</a></nav>
+  <nav><a class="nb" href="../index.html">📋 バックナンバー</a><button class="nb exp-btn" onclick="exportRatings()">⭐ 評価エクスポート</button></nav>
 </div>
 <div class="hero">
   <div class="hero-in">
     <div class="hero-date">📅 2026-05-02</div>
     <h1>デイリーダイジェスト</h1>
-    <div class="hero-stats"><div class="stat">📰 記事 <strong>10 件</strong></div></div>
+    <div class="hero-stats"><div class="stat">📰 記事 <strong>5 件</strong></div></div>
   </div>
 </div>
-<main><div class="sec"><div class="sec-hd" style="background:#e3f2fd;border:1px solid #bbdefb;color:#1565c0">🌍 国際政治・地政学</div><div class="art"><div class="art-ttl"><a href="https://thediplomat.com/2026/05/north-korea-puts-its-medium-term-plan-on-track/" target="_blank" style="color:#1565c0">North Korea Puts Its Medium-Term Plan on Track</a></div><div class="art-meta"><span>The Diplomat</span><span>📅 日時不明</span></div><div class="art-body"><p><em>要約エラー: 503 UNAVAILABLE. {&#x27;error&#x27;: {&#x27;code&#x27;: 503, &#x27;message&#x27;: &#x27;This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.&#x27;, &#x27;status&#x27;: &#x27;UNAVAILABLE&#x27;}}</em></p></div></div>
-<div class="art"><div class="art-ttl"><a href="https://thediplomat.com/2026/05/japans-forgotten-deployment-to-the-middle-east/" target="_blank" style="color:#1565c0">Japan’s Forgotten Deployment to the Middle East</a></div><div class="art-meta"><span>The Diplomat</span><span>📅 日時不明</span></div><div class="art-body"><p>以下に記事の要約を記述します。</p>
+<main><div class="sec"><div class="sec-hd" style="background:#e3f2fd;border:1px solid #bbdefb;color:#1565c0">🌍 国際政治・地政学</div><div class="art"><div class="art-ttl"><a href="https://thediplomat.com/2026/05/japans-forgotten-deployment-to-the-middle-east/" target="_blank" style="color:#1565c0">Japan’s Forgotten Deployment to the Middle East</a></div><div class="art-meta"><span>The Diplomat</span><span>📅 2026年5月2日 02:15 UTC</span></div><div class="art-body"><p>以下に記事の要約を記述します。</p>
 <br>
 <ul>
 <li>  <strong>主題</strong>: 日本の中東派遣を再評価し、ホルムズ海峡の航行安全確保に貢献する方策</li>
@@ -67,11 +72,9 @@ main{max-width:860px;margin:0 auto;padding:24px 16px 60px}
 <ul>
 <li>  <strong>地政学的含意</strong>:</li>
 </ul>
-<p>    日本の防衛政策における海外派遣の新たな方向性を示唆し、自国のエネルギーシーレーン防衛への主体的な関与を強化する。これは、国際社会における日本の安全保障上の責任と役割を拡大させる可能性を秘めている。</p></div></div>
-<div class="art"><div class="art-ttl"><a href="https://thediplomat.com/2026/05/5-years-since-uk-parliament-recognized-the-uyghur-genocide-theres-been-little-policy-action/" target="_blank" style="color:#1565c0">5 Years Since UK Parliament Recognized the Uyghur Genocide, There’s Been Little Policy Action</a></div><div class="art-meta"><span>The Diplomat</span><span>📅 日時不明</span></div><div class="art-body"><p><em>要約エラー: 429 RESOURCE_EXHAUSTED. {&#x27;error&#x27;: {&#x27;code&#x27;: 429, &#x27;message&#x27;: &#x27;You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n</em> Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 35.672390638s.&#x27;, &#x27;status&#x27;: &#x27;RESOURCE_EXHAUSTED&#x27;, &#x27;details&#x27;: [{&#x27;@type&#x27;: &#x27;type.googleapis.com/google.rpc.Help&#x27;, &#x27;links&#x27;: [{&#x27;description&#x27;: &#x27;Learn more about Gemini API quotas&#x27;, &#x27;url&#x27;: &#x27;https://ai.google.dev/gemini-api/docs/rate-limits&#x27;}]}, {&#x27;@type&#x27;: &#x27;type.googleapis.com/google.rpc.QuotaFailure&#x27;, &#x27;violations&#x27;: [{&#x27;quotaMetric&#x27;: &#x27;generativelanguage.googleapis.com/generate_content_free_tier_requests&#x27;, &#x27;quotaId&#x27;: &#x27;GenerateRequestsPerDayPerProjectPerModel-FreeTier&#x27;, &#x27;quotaDimensions&#x27;: {&#x27;location&#x27;: &#x27;global&#x27;, &#x27;model&#x27;: &#x27;gemini-2.5-flash&#x27;}, &#x27;quotaValue&#x27;: &#x27;20&#x27;}]}, {&#x27;@type&#x27;: &#x27;type.googleapis.com/google.rpc.RetryInfo&#x27;, &#x27;retryDelay&#x27;: &#x27;35s&#x27;}]}}*</p></div></div>
-<div class="art"><div class="art-ttl"><a href="https://foreignpolicy.com/2026/05/01/trump-60-days-war-powers-resolution-unconstitutional-iran-us-congress/" target="_blank" style="color:#1565c0">Trump: 60-Day War Powers Deadline ‘Totally Unconstitutional’</a></div><div class="art-meta"><span>Foreign Policy</span><span>📅 日時不明</span></div><div class="art-body"><p><em>要約エラー: 429 RESOURCE_EXHAUSTED. {&#x27;error&#x27;: {&#x27;code&#x27;: 429, &#x27;message&#x27;: &#x27;You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n</em> Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 55.737816755s.&#x27;, &#x27;status&#x27;: &#x27;RESOURCE_EXHAUSTED&#x27;, &#x27;details&#x27;: [{&#x27;@type&#x27;: &#x27;type.googleapis.com/google.rpc.Help&#x27;, &#x27;links&#x27;: [{&#x27;description&#x27;: &#x27;Learn more about Gemini API quotas&#x27;, &#x27;url&#x27;: &#x27;https://ai.google.dev/gemini-api/docs/rate-limits&#x27;}]}, {&#x27;@type&#x27;: &#x27;type.googleapis.com/google.rpc.QuotaFailure&#x27;, &#x27;violations&#x27;: [{&#x27;quotaMetric&#x27;: &#x27;generativelanguage.googleapis.com/generate_content_free_tier_requests&#x27;, &#x27;quotaId&#x27;: &#x27;GenerateRequestsPerDayPerProjectPerModel-FreeTier&#x27;, &#x27;quotaDimensions&#x27;: {&#x27;location&#x27;: &#x27;global&#x27;, &#x27;model&#x27;: &#x27;gemini-2.5-flash&#x27;}, &#x27;quotaValue&#x27;: &#x27;20&#x27;}]}, {&#x27;@type&#x27;: &#x27;type.googleapis.com/google.rpc.RetryInfo&#x27;, &#x27;retryDelay&#x27;: &#x27;55s&#x27;}]}}*</p></div></div>
+<p>    日本の防衛政策における海外派遣の新たな方向性を示唆し、自国のエネルギーシーレーン防衛への主体的な関与を強化する。これは、国際社会における日本の安全保障上の責任と役割を拡大させる可能性を秘めている。</p></div><div class="art-ft"><div class="stars" data-url="https://thediplomat.com/2026/05/japans-forgotten-deployment-to-the-middle-east/" data-title="Japan’s Forgotten Deployment to the Middle East" data-src="The Diplomat" data-date="2026-05-02"><span class="star" data-n="1">★</span><span class="star" data-n="2">★</span><span class="star" data-n="3">★</span><span class="star" data-n="4">★</span><span class="star" data-n="5">★</span></div></div></div>
 </div>
-<div class="sec"><div class="sec-hd" style="background:#e8f5e9;border:1px solid #c8e6c9;color:#2e7d32">🔬 科学・テクノロジー</div><div class="art"><div class="art-ttl"><a href="https://www.technologyreview.com/2026/05/01/1136800/musk-v-altman-week-1-musk-says-he-was-duped-warns-ai-could-kill-us-all-and-admits-that-xai-distills-openais-models/" target="_blank" style="color:#2e7d32">Musk v. Altman week 1: Elon Musk says he was duped, warns AI could kill us all, and admits that xAI distills OpenAI’s models</a></div><div class="art-meta"><span>MIT Technology Review</span><span>📅 日時不明</span></div><div class="art-body"><h2>要約</h2>
+<div class="sec"><div class="sec-hd" style="background:#e8f5e9;border:1px solid #c8e6c9;color:#2e7d32">🔬 科学・テクノロジー</div><div class="art"><div class="art-ttl"><a href="https://www.technologyreview.com/2026/05/01/1136800/musk-v-altman-week-1-musk-says-he-was-duped-warns-ai-could-kill-us-all-and-admits-that-xai-distills-openais-models/" target="_blank" style="color:#2e7d32">Musk v. Altman week 1: Elon Musk says he was duped, warns AI could kill us all, and admits that xAI distills OpenAI’s models</a></div><div class="art-meta"><span>MIT Technology Review</span><span>📅 2026年5月1日 22:08 UTC</span></div><div class="art-body"><h2>要約</h2>
 <br>
 <ul>
 <li>  <strong>主題</strong>: イーロン・マスク氏とOpenAIの間の訴訟における初週の証言内容、特にマスク氏が主張する詐欺疑惑、AIの潜在的脅威に関する警告、および彼自身のAI企業xAIによるOpenAIモデルの利用に関する言及。</li>
@@ -90,11 +93,10 @@ main{max-width:860px;margin:0 auto;padding:24px 16px 60px}
 <br>
 <ul>
 <li>  <strong>意義・影響</strong>: この裁判は、AI技術の発展とガバナンス、特に営利と非営利のバランス、そしてAIの安全性に関する議論に新たな光を当てるものとなる。また、AI業界における主要プレイヤー間の対立が、今後の技術開発の方向性や倫理基準にどのような影響を与えるかを示す事例となるだろう。</li>
-</ul></div></div>
-<div class="art"><div class="art-ttl"><a href="https://www.technologyreview.com/2026/05/01/1136779/cyber-insecurity-in-the-ai-era/" target="_blank" style="color:#2e7d32">Cyber-Insecurity in the AI Era</a></div><div class="art-meta"><span>MIT Technology Review</span><span>📅 日時不明</span></div><div class="art-body"><p>以下、ご指定の形式で要約いたします。</p></div></div>
-<div class="art"><div class="art-ttl"><a href="https://www.technologyreview.com/2026/05/01/1136772/operationalizing-ai-for-scale-and-sovereignty/" target="_blank" style="color:#2e7d32">Operationalizing AI for Scale and Sovereignty</a></div><div class="art-meta"><span>MIT Technology Review</span><span>📅 日時不明</span></div><div class="art-body"><p><em>要約エラー: 429 RESOURCE_EXHAUSTED. {&#x27;error&#x27;: {&#x27;code&#x27;: 429, &#x27;message&#x27;: &#x27;You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n</em> Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 22.38168328s.&#x27;, &#x27;status&#x27;: &#x27;RESOURCE_EXHAUSTED&#x27;, &#x27;details&#x27;: [{&#x27;@type&#x27;: &#x27;type.googleapis.com/google.rpc.Help&#x27;, &#x27;links&#x27;: [{&#x27;description&#x27;: &#x27;Learn more about Gemini API quotas&#x27;, &#x27;url&#x27;: &#x27;https://ai.google.dev/gemini-api/docs/rate-limits&#x27;}]}, {&#x27;@type&#x27;: &#x27;type.googleapis.com/google.rpc.QuotaFailure&#x27;, &#x27;violations&#x27;: [{&#x27;quotaMetric&#x27;: &#x27;generativelanguage.googleapis.com/generate_content_free_tier_requests&#x27;, &#x27;quotaId&#x27;: &#x27;GenerateRequestsPerDayPerProjectPerModel-FreeTier&#x27;, &#x27;quotaDimensions&#x27;: {&#x27;location&#x27;: &#x27;global&#x27;, &#x27;model&#x27;: &#x27;gemini-2.5-flash&#x27;}, &#x27;quotaValue&#x27;: &#x27;20&#x27;}]}, {&#x27;@type&#x27;: &#x27;type.googleapis.com/google.rpc.RetryInfo&#x27;, &#x27;retryDelay&#x27;: &#x27;22s&#x27;}]}}*</p></div></div>
+</ul></div><div class="art-ft"><div class="stars" data-url="https://www.technologyreview.com/2026/05/01/1136800/musk-v-altman-week-1-musk-says-he-was-duped-warns-ai-could-kill-us-all-and-admits-that-xai-distills-openais-models/" data-title="Musk v. Altman week 1: Elon Musk says he was duped, warns AI could kill us all, " data-src="MIT Technology Review" data-date="2026-05-02"><span class="star" data-n="1">★</span><span class="star" data-n="2">★</span><span class="star" data-n="3">★</span><span class="star" data-n="4">★</span><span class="star" data-n="5">★</span></div></div></div>
+<div class="art"><div class="art-ttl"><a href="https://www.technologyreview.com/2026/05/01/1136779/cyber-insecurity-in-the-ai-era/" target="_blank" style="color:#2e7d32">Cyber-Insecurity in the AI Era</a></div><div class="art-meta"><span>MIT Technology Review</span><span>📅 2026年5月1日 15:54 UTC</span></div><div class="art-body"><p>以下、ご指定の形式で要約いたします。</p></div><div class="art-ft"><div class="stars" data-url="https://www.technologyreview.com/2026/05/01/1136779/cyber-insecurity-in-the-ai-era/" data-title="Cyber-Insecurity in the AI Era" data-src="MIT Technology Review" data-date="2026-05-02"><span class="star" data-n="1">★</span><span class="star" data-n="2">★</span><span class="star" data-n="3">★</span><span class="star" data-n="4">★</span><span class="star" data-n="5">★</span></div></div></div>
 </div>
-<div class="sec"><div class="sec-hd" style="background:#f3e5f5;border:1px solid #e1bee7;color:#6a1b9a">🎬 映画・映像芸術</div><div class="art"><div class="art-ttl"><a href="https://www.indiewire.com/features/best-of/what-happened-was-1994-tom-noonan-cult-film-1235191951/" target="_blank" style="color:#6a1b9a">The Deeply Unnerving 1994 Indie ‘What Happened Was’ Reminds You Dating Has Always Been Hell</a></div><div class="art-meta"><span>IndieWire</span><span>📅 日時不明</span></div><div class="art-body"><ul>
+<div class="sec"><div class="sec-hd" style="background:#f3e5f5;border:1px solid #e1bee7;color:#6a1b9a">🎬 映画・映像芸術</div><div class="art"><div class="art-ttl"><a href="https://www.indiewire.com/features/best-of/what-happened-was-1994-tom-noonan-cult-film-1235191951/" target="_blank" style="color:#6a1b9a">The Deeply Unnerving 1994 Indie ‘What Happened Was’ Reminds You Dating Has Always Been Hell</a></div><div class="art-meta"><span>IndieWire</span><span>📅 2026年5月2日 03:59 UTC</span></div><div class="art-body"><ul>
 <li><strong>主題</strong>: 1994年のインディーズ映画『What Happened Was』の再評価を通じて、現代社会における人間関係の困難さと孤独の普遍的なテーマを考察する。</li>
 <li><strong>背景・文脈</strong>: サンダンス映画祭でグランプリと脚本賞を受賞したにもかかわらず、広く知られることなく「隠れた名作」として位置づけられてきた作品である。しかし、現代のオンラインデート文化やパンデミック後の孤独が広がる社会において、本作が描く人との繋がりやデートの困難さが改めて注目されている。</li>
 <li><strong>主要な論点・分析</strong>:</li>
@@ -105,10 +107,45 @@ main{max-width:860px;margin:0 auto;padding:24px 16px 60px}
 <p>    - <strong>俳優陣の繊細な演技</strong>: 監督・脚本・主演を務めたトム・ヌーナンと、カレン・シラスの演技が、複雑なキャラクターの内面を微細な表情や台詞のニュアンスで表現し、作品に深みを与えている。</p>
 <ul>
 <li><strong>批評的視点</strong>: 本作は、映画的な表現のミニマリズムを通じて人間心理の深淵と関係性の困難さを追求した映像芸術作品として高く評価されるべきである。現代社会が抱える孤独や他者との隔たりといったテーマを先駆的に描き、時代を超えたインディーズ映画の傑作として再評価が求められる。</li>
-</ul></div></div>
-<div class="art"><div class="art-ttl"><a href="https://www.indiewire.com/news/analysis/greta-gerwig-narnia-imax-success-awards-1235191937/" target="_blank" style="color:#6a1b9a">Greta Gerwig’s ‘Narnia’ Is Aiming for More Than Awards Glory</a></div><div class="art-meta"><span>IndieWire</span><span>📅 日時不明</span></div><div class="art-body"><p>以下に、ご提示いただいた記事の要約を専門的な日本語で記述します。</p></div></div>
-<div class="art"><div class="art-ttl"><a href="https://www.indiewire.com/features/commentary/my-brother-the-minotaur-sketch-to-screen-1235191840/" target="_blank" style="color:#6a1b9a">‘My Brother The Minotaur’ Is a Kids Cartoon Anyone Can Enjoy</a></div><div class="art-meta"><span>IndieWire</span><span>📅 日時不明</span></div><div class="art-body"><p><em>要約エラー: 429 RESOURCE_EXHAUSTED. {&#x27;error&#x27;: {&#x27;code&#x27;: 429, &#x27;message&#x27;: &#x27;You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n</em> Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 9.048826222s.&#x27;, &#x27;status&#x27;: &#x27;RESOURCE_EXHAUSTED&#x27;, &#x27;details&#x27;: [{&#x27;@type&#x27;: &#x27;type.googleapis.com/google.rpc.Help&#x27;, &#x27;links&#x27;: [{&#x27;description&#x27;: &#x27;Learn more about Gemini API quotas&#x27;, &#x27;url&#x27;: &#x27;https://ai.google.dev/gemini-api/docs/rate-limits&#x27;}]}, {&#x27;@type&#x27;: &#x27;type.googleapis.com/google.rpc.QuotaFailure&#x27;, &#x27;violations&#x27;: [{&#x27;quotaMetric&#x27;: &#x27;generativelanguage.googleapis.com/generate_content_free_tier_requests&#x27;, &#x27;quotaId&#x27;: &#x27;GenerateRequestsPerDayPerProjectPerModel-FreeTier&#x27;, &#x27;quotaDimensions&#x27;: {&#x27;location&#x27;: &#x27;global&#x27;, &#x27;model&#x27;: &#x27;gemini-2.5-flash&#x27;}, &#x27;quotaValue&#x27;: &#x27;20&#x27;}]}, {&#x27;@type&#x27;: &#x27;type.googleapis.com/google.rpc.RetryInfo&#x27;, &#x27;retryDelay&#x27;: &#x27;9s&#x27;}]}}*</p></div></div>
+</ul></div><div class="art-ft"><div class="stars" data-url="https://www.indiewire.com/features/best-of/what-happened-was-1994-tom-noonan-cult-film-1235191951/" data-title="The Deeply Unnerving 1994 Indie ‘What Happened Was’ Reminds You Dating Has Alway" data-src="IndieWire" data-date="2026-05-02"><span class="star" data-n="1">★</span><span class="star" data-n="2">★</span><span class="star" data-n="3">★</span><span class="star" data-n="4">★</span><span class="star" data-n="5">★</span></div></div></div>
+<div class="art"><div class="art-ttl"><a href="https://www.indiewire.com/news/analysis/greta-gerwig-narnia-imax-success-awards-1235191937/" target="_blank" style="color:#6a1b9a">Greta Gerwig’s ‘Narnia’ Is Aiming for More Than Awards Glory</a></div><div class="art-meta"><span>IndieWire</span><span>📅 2026年5月1日 22:56 UTC</span></div><div class="art-body"><p>以下に、ご提示いただいた記事の要約を専門的な日本語で記述します。</p></div><div class="art-ft"><div class="stars" data-url="https://www.indiewire.com/news/analysis/greta-gerwig-narnia-imax-success-awards-1235191937/" data-title="Greta Gerwig’s ‘Narnia’ Is Aiming for More Than Awards Glory" data-src="IndieWire" data-date="2026-05-02"><span class="star" data-n="1">★</span><span class="star" data-n="2">★</span><span class="star" data-n="3">★</span><span class="star" data-n="4">★</span><span class="star" data-n="5">★</span></div></div></div>
 </div>
 </main>
+<script>
+const _RK='digest_ratings';
+function _lr(){try{return JSON.parse(localStorage.getItem(_RK)||'{}')}catch(e){return{}}}
+function _sv(url,r,t,s,d){const m=_lr();if(r===0)delete m[url];else m[url]={rating:r,title:(t||'').substring(0,80),source:s,date:d};localStorage.setItem(_RK,JSON.stringify(m))}
+function _us(el,n){el.querySelectorAll('.star').forEach(s=>{s.classList.toggle('on',parseInt(s.dataset.n)<=n)})}
+function initStars(){
+  const m=_lr();
+  document.querySelectorAll('.stars').forEach(el=>{
+    const url=el.dataset.url;
+    if(m[url])_us(el,m[url].rating);
+    el.addEventListener('mouseleave',()=>_us(el,(m[url]||{}).rating||0));
+    el.querySelectorAll('.star').forEach(s=>{
+      const n=parseInt(s.dataset.n);
+      s.addEventListener('mouseenter',()=>_us(el,n));
+      s.addEventListener('click',e=>{
+        e.preventDefault();e.stopPropagation();
+        const cur=(m[url]||{}).rating||0,nr=cur===n?0:n;
+        _sv(url,nr,el.dataset.title,el.dataset.src,el.dataset.date);
+        if(nr)m[url]={rating:nr};else delete m[url];
+        _us(el,nr);
+      });
+    });
+  });
+}
+function exportRatings(){
+  const m=_lr(),cnt=Object.keys(m).length;
+  if(!cnt){alert('評価データがありません。★を付けてからエクスポートしてください。');return;}
+  const blob=new Blob([JSON.stringify(m,null,2)],{type:'application/json'});
+  const u=URL.createObjectURL(blob);
+  const a=document.createElement('a');
+  a.href=u;a.download='ratings.json';document.body.appendChild(a);a.click();
+  document.body.removeChild(a);URL.revokeObjectURL(u);
+  alert(cnt+'件の評価をエクスポートしました。scripts/ratings.json として保存してください。');
+}
+document.addEventListener('DOMContentLoaded',initStars);
+</script>
 </body>
 </html>

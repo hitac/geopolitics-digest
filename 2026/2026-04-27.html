@@ -35,12 +35,18 @@ main{max-width:860px;margin:0 auto;padding:24px 16px 60px}
 .art-body ul{padding-left:1.4em;margin:4px 0}
 .art-body li{margin:3px 0}
 .art-body strong{font-weight:700}
+.stars{display:inline-flex;gap:2px;cursor:pointer;user-select:none;margin-top:6px}
+.star{font-size:1em;color:#d1d5db;transition:color .1s;padding:0 1px;line-height:1}
+.star.on{color:#f59e0b}
+.exp-btn{cursor:pointer;font:inherit;background:#fff8e1;border-color:#ffe082;color:#f57f17}
+.exp-btn:hover{background:#fff3cd}
+.art-ft{padding:8px 0 0;border-top:1px solid var(--border);margin-top:10px}
 </style>
 </head>
 <body>
 <div id="hd">
   <span class="logo">🌐 国際情勢ダイジェスト</span>
-  <nav><a class="nb" href="../index.html">📋 バックナンバー</a></nav>
+  <nav><a class="nb" href="../index.html">📋 バックナンバー</a><button class="nb exp-btn" onclick="exportRatings()">⭐ 評価エクスポート</button></nav>
 </div>
 <div class="hero">
   <div class="hero-in">
@@ -49,9 +55,9 @@ main{max-width:860px;margin:0 auto;padding:24px 16px 60px}
     <div class="hero-stats"><div class="stat">📰 記事 <strong>10 件</strong></div></div>
   </div>
 </div>
-<main><div class="sec"><div class="sec-hd" style="background:#e3f2fd;border:1px solid #bbdefb;color:#1565c0">🌍 国際政治・地政学</div><div class="art"><div class="art-ttl"><a href="https://warontherocks.com/confronting-the-past-and-present-lessons-from-chornobyl/" target="_blank" style="color:#1565c0">Confronting the Past and Present, Lessons from Chornobyl</a></div><div class="art-meta"><span>War on the Rocks</span><span>📅 日時不明</span></div><div class="art-body"><p>以下の国際政治・外交・地政学に関する英語記事を日本語で要約します。</p></div></div>
-<div class="art"><div class="art-ttl"><a href="https://warontherocks.com/cogs-of-war/from-slogan-to-standard-how-the-pentagon-should-define-affordable-mass/" target="_blank" style="color:#1565c0">From Slogan to Standard: How the Pentagon Should Define Affordable Mass</a></div><div class="art-meta"><span>War on the Rocks</span><span>📅 日時不明</span></div><div class="art-body"><p>はい、承知いたしました。 War on the Rocksの記事「From Slogan to Standard: How the Pentagon Should Define Affordable Mass」の要約を以下に示します。</p></div></div>
-<div class="art"><div class="art-ttl"><a href="https://foreignpolicy.com/2026/04/27/iran-us-war-hormuz-strait-blockade-trade-maritime-navy-strategy/" target="_blank" style="color:#1565c0">The U.S. Shouldn’t Rule the Seas Forever</a></div><div class="art-meta"><span>Foreign Policy</span><span>📅 日時不明</span></div><div class="art-body"><h2>要約</h2>
+<main><div class="sec"><div class="sec-hd" style="background:#e3f2fd;border:1px solid #bbdefb;color:#1565c0">🌍 国際政治・地政学</div><div class="art"><div class="art-ttl"><a href="https://warontherocks.com/confronting-the-past-and-present-lessons-from-chornobyl/" target="_blank" style="color:#1565c0">Confronting the Past and Present, Lessons from Chornobyl</a></div><div class="art-meta"><span>War on the Rocks</span><span>📅 2026年4月27日 16:46 UTC</span></div><div class="art-body"><p>以下の国際政治・外交・地政学に関する英語記事を日本語で要約します。</p></div><div class="art-ft"><div class="stars" data-url="https://warontherocks.com/confronting-the-past-and-present-lessons-from-chornobyl/" data-title="Confronting the Past and Present, Lessons from Chornobyl" data-src="War on the Rocks" data-date="2026-04-27"><span class="star" data-n="1">★</span><span class="star" data-n="2">★</span><span class="star" data-n="3">★</span><span class="star" data-n="4">★</span><span class="star" data-n="5">★</span></div></div></div>
+<div class="art"><div class="art-ttl"><a href="https://warontherocks.com/cogs-of-war/from-slogan-to-standard-how-the-pentagon-should-define-affordable-mass/" target="_blank" style="color:#1565c0">From Slogan to Standard: How the Pentagon Should Define Affordable Mass</a></div><div class="art-meta"><span>War on the Rocks</span><span>📅 2026年4月27日 08:00 UTC</span></div><div class="art-body"><p>はい、承知いたしました。 War on the Rocksの記事「From Slogan to Standard: How the Pentagon Should Define Affordable Mass」の要約を以下に示します。</p></div><div class="art-ft"><div class="stars" data-url="https://warontherocks.com/cogs-of-war/from-slogan-to-standard-how-the-pentagon-should-define-affordable-mass/" data-title="From Slogan to Standard: How the Pentagon Should Define Affordable Mass" data-src="War on the Rocks" data-date="2026-04-27"><span class="star" data-n="1">★</span><span class="star" data-n="2">★</span><span class="star" data-n="3">★</span><span class="star" data-n="4">★</span><span class="star" data-n="5">★</span></div></div></div>
+<div class="art"><div class="art-ttl"><a href="https://foreignpolicy.com/2026/04/27/iran-us-war-hormuz-strait-blockade-trade-maritime-navy-strategy/" target="_blank" style="color:#1565c0">The U.S. Shouldn’t Rule the Seas Forever</a></div><div class="art-meta"><span>Foreign Policy</span><span>📅 2026年4月27日 21:16 UTC</span></div><div class="art-body"><h2>要約</h2>
 <br>
 <ul>
 <li>  <strong>主題</strong>: 本記事は、米国が世界の海洋における「航行の自由」を保証する能力と必要性が低下している現状、およびその戦略的含意について論じる。</li>
@@ -72,10 +78,10 @@ main{max-width:860px;margin:0 auto;padding:24px 16px 60px}
 <br>
 <ul>
 <li>  <strong>地政学的含意</strong>: 米国の海洋覇権の終焉は、国際的なパワーバランスの再編を促し、地域大国や同盟国が海洋安全保障においてより大きな役割を担うことを要求する。この変化は、航行の自由を維持するための新たな多国間協力の枠組みと、より分散化された海洋ガバナンスの必要性を示唆する。</li>
-</ul></div></div>
-<div class="art"><div class="art-ttl"><a href="https://warontherocks.com/beijings-united-front-and-the-quiet-transfer-of-western-technology/" target="_blank" style="color:#1565c0">Beijing’s United Front and the Quiet Transfer of Western Technology</a></div><div class="art-meta"><span>War on the Rocks</span><span>📅 日時不明</span></div><div class="art-body"><p>以下に、ご指定の形式で記事の要約を記述します。</p></div></div>
-<div class="art"><div class="art-ttl"><a href="https://foreignpolicy.com/2026/04/27/iran-reopen-strait-hormuz-postpone-nuclear-talks-us-blockade/" target="_blank" style="color:#1565c0">Iran Offers to Reopen the Strait of Hormuz</a></div><div class="art-meta"><span>Foreign Policy</span><span>📅 日時不明</span></div><div class="art-body"><p>以下に記事の要約を簡潔かつ専門的な日本語で記述します。</p></div></div>
-<div class="art"><div class="art-ttl"><a href="https://thediplomat.com/2026/04/central-asians-in-russia-ukraine-war-from-forced-recruitment-to-economic-recruitment/" target="_blank" style="color:#1565c0">Central Asians in Russia-Ukraine War: From Forced Recruitment to Economic Recruitment</a></div><div class="art-meta"><span>The Diplomat</span><span>📅 日時不明</span></div><div class="art-body"><p>提供された記事のタイトルと冒頭の一文に基づいて、以下に要約します。</p>
+</ul></div><div class="art-ft"><div class="stars" data-url="https://foreignpolicy.com/2026/04/27/iran-us-war-hormuz-strait-blockade-trade-maritime-navy-strategy/" data-title="The U.S. Shouldn’t Rule the Seas Forever" data-src="Foreign Policy" data-date="2026-04-27"><span class="star" data-n="1">★</span><span class="star" data-n="2">★</span><span class="star" data-n="3">★</span><span class="star" data-n="4">★</span><span class="star" data-n="5">★</span></div></div></div>
+<div class="art"><div class="art-ttl"><a href="https://warontherocks.com/beijings-united-front-and-the-quiet-transfer-of-western-technology/" target="_blank" style="color:#1565c0">Beijing’s United Front and the Quiet Transfer of Western Technology</a></div><div class="art-meta"><span>War on the Rocks</span><span>📅 2026年4月27日 07:30 UTC</span></div><div class="art-body"><p>以下に、ご指定の形式で記事の要約を記述します。</p></div><div class="art-ft"><div class="stars" data-url="https://warontherocks.com/beijings-united-front-and-the-quiet-transfer-of-western-technology/" data-title="Beijing’s United Front and the Quiet Transfer of Western Technology" data-src="War on the Rocks" data-date="2026-04-27"><span class="star" data-n="1">★</span><span class="star" data-n="2">★</span><span class="star" data-n="3">★</span><span class="star" data-n="4">★</span><span class="star" data-n="5">★</span></div></div></div>
+<div class="art"><div class="art-ttl"><a href="https://foreignpolicy.com/2026/04/27/iran-reopen-strait-hormuz-postpone-nuclear-talks-us-blockade/" target="_blank" style="color:#1565c0">Iran Offers to Reopen the Strait of Hormuz</a></div><div class="art-meta"><span>Foreign Policy</span><span>📅 2026年4月27日 20:50 UTC</span></div><div class="art-body"><p>以下に記事の要約を簡潔かつ専門的な日本語で記述します。</p></div><div class="art-ft"><div class="stars" data-url="https://foreignpolicy.com/2026/04/27/iran-reopen-strait-hormuz-postpone-nuclear-talks-us-blockade/" data-title="Iran Offers to Reopen the Strait of Hormuz" data-src="Foreign Policy" data-date="2026-04-27"><span class="star" data-n="1">★</span><span class="star" data-n="2">★</span><span class="star" data-n="3">★</span><span class="star" data-n="4">★</span><span class="star" data-n="5">★</span></div></div></div>
+<div class="art"><div class="art-ttl"><a href="https://thediplomat.com/2026/04/central-asians-in-russia-ukraine-war-from-forced-recruitment-to-economic-recruitment/" target="_blank" style="color:#1565c0">Central Asians in Russia-Ukraine War: From Forced Recruitment to Economic Recruitment</a></div><div class="art-meta"><span>The Diplomat</span><span>📅 2026年4月27日 23:38 UTC</span></div><div class="art-body"><p>提供された記事のタイトルと冒頭の一文に基づいて、以下に要約します。</p>
 <br>
 <ul>
 <li>  <strong>主題</strong>: ロシア・ウクライナ戦争における中央アジア人移民の動員メカニズムが、強制的な徴兵から経済的誘因へと変化している実態について。</li>
@@ -89,8 +95,8 @@ main{max-width:860px;margin:0 auto;padding:24px 16px 60px}
 <p>    *   この動向は、中央アジア諸国の社会構造、経済、安全保障に長期的な影響を及ぼす可能性を孕んでいる。</p>
 <ul>
 <li>  <strong>地政学的含意</strong>: ロシアのウクライナ戦争における人的資源確保戦略の一環であり、中央アジア諸国に対するロシアの強い影響力と非対称な関係を浮き彫りにする。これにより中央アジアの国内安定や地域全体のパワーバランスにも影響が及ぶ可能性がある。</li>
-</ul></div></div>
-<div class="art"><div class="art-ttl"><a href="https://thediplomat.com/2026/04/can-trump-still-deal-with-kim-jong-un-after-strikes-on-iran/" target="_blank" style="color:#1565c0">Can Trump Still Deal With Kim Jong Un After Strikes on Iran?</a></div><div class="art-meta"><span>The Diplomat</span><span>📅 日時不明</span></div><div class="art-body"><h2>要約</h2>
+</ul></div><div class="art-ft"><div class="stars" data-url="https://thediplomat.com/2026/04/central-asians-in-russia-ukraine-war-from-forced-recruitment-to-economic-recruitment/" data-title="Central Asians in Russia-Ukraine War: From Forced Recruitment to Economic Recrui" data-src="The Diplomat" data-date="2026-04-27"><span class="star" data-n="1">★</span><span class="star" data-n="2">★</span><span class="star" data-n="3">★</span><span class="star" data-n="4">★</span><span class="star" data-n="5">★</span></div></div></div>
+<div class="art"><div class="art-ttl"><a href="https://thediplomat.com/2026/04/can-trump-still-deal-with-kim-jong-un-after-strikes-on-iran/" target="_blank" style="color:#1565c0">Can Trump Still Deal With Kim Jong Un After Strikes on Iran?</a></div><div class="art-meta"><span>The Diplomat</span><span>📅 2026年4月27日 23:27 UTC</span></div><div class="art-body"><h2>要約</h2>
 <br>
 <ul>
 <li>  <strong>主題</strong>: イランへの軍事攻撃が、将来のトランプ政権下での北朝鮮の金正恩との核交渉に与える影響と、その実現可能性に関する考察。</li>
@@ -104,17 +110,53 @@ main{max-width:860px;margin:0 auto;padding:24px 16px 60px}
 <p>    *   対北朝鮮交渉は、非核化を最優先する従来のアプローチから、より段階的かつ包括的な安全保障上の枠組みを視野に入れた戦略へと転換を迫られる。</p>
 <ul>
 <li>  <strong>地政学的含意</strong>: 中東における米国の軍事行動は、東アジアの安全保障環境、特に核不拡散体制と地域のパワーバランスに直接的な影響を与えることを示唆する。これにより、米国および日韓両同盟国は、対北朝鮮戦略の根本的な見直しを迫られる可能性が高い。</li>
-</ul></div></div>
+</ul></div><div class="art-ft"><div class="stars" data-url="https://thediplomat.com/2026/04/can-trump-still-deal-with-kim-jong-un-after-strikes-on-iran/" data-title="Can Trump Still Deal With Kim Jong Un After Strikes on Iran?" data-src="The Diplomat" data-date="2026-04-27"><span class="star" data-n="1">★</span><span class="star" data-n="2">★</span><span class="star" data-n="3">★</span><span class="star" data-n="4">★</span><span class="star" data-n="5">★</span></div></div></div>
 </div>
-<div class="sec"><div class="sec-hd" style="background:#e8f5e9;border:1px solid #c8e6c9;color:#2e7d32">🔬 科学・テクノロジー</div><div class="art"><div class="art-ttl"><a href="https://www.technologyreview.com/2026/04/27/1136456/the-missing-step-between-hype-and-profit/" target="_blank" style="color:#2e7d32">The missing step between hype and profit</a></div><div class="art-meta"><span>MIT Technology Review</span><span>📅 日時不明</span></div><div class="art-body"><p>ご提供いただいた記事の概要・本文は、記事のタイトル「The missing step between hype and profit」と内容が一致しておらず、また極めて断片的な情報（ロンドンの反AIデモでチラシを拾ったという導入部のみ）にとどまっております。</p>
+<div class="sec"><div class="sec-hd" style="background:#e8f5e9;border:1px solid #c8e6c9;color:#2e7d32">🔬 科学・テクノロジー</div><div class="art"><div class="art-ttl"><a href="https://www.technologyreview.com/2026/04/27/1136456/the-missing-step-between-hype-and-profit/" target="_blank" style="color:#2e7d32">The missing step between hype and profit</a></div><div class="art-meta"><span>MIT Technology Review</span><span>📅 2026年4月27日 16:13 UTC</span></div><div class="art-body"><p>ご提供いただいた記事の概要・本文は、記事のタイトル「The missing step between hype and profit」と内容が一致しておらず、また極めて断片的な情報（ロンドンの反AIデモでチラシを拾ったという導入部のみ）にとどまっております。</p>
 <br>
 <p>そのため、記事全体の主題、背景、主要な論点、意義・影響を特定し、ご指定の形式で要約を作成することが困難です。</p>
 <br>
-<p>もし記事全体の本文をご提供いただけますと、ご要望に沿って要約を作成することが可能です。</p></div></div>
+<p>もし記事全体の本文をご提供いただけますと、ご要望に沿って要約を作成することが可能です。</p></div><div class="art-ft"><div class="stars" data-url="https://www.technologyreview.com/2026/04/27/1136456/the-missing-step-between-hype-and-profit/" data-title="The missing step between hype and profit" data-src="MIT Technology Review" data-date="2026-04-27"><span class="star" data-n="1">★</span><span class="star" data-n="2">★</span><span class="star" data-n="3">★</span><span class="star" data-n="4">★</span><span class="star" data-n="5">★</span></div></div></div>
 </div>
-<div class="sec"><div class="sec-hd" style="background:#f3e5f5;border:1px solid #e1bee7;color:#6a1b9a">🎬 映画・映像芸術</div><div class="art"><div class="art-ttl"><a href="https://www.filmcomment.com/blog/being-yourself-george-clooney/" target="_blank" style="color:#6a1b9a">Being Yourself: George Clooney</a></div><div class="art-meta"><span>Film Comment</span><span>📅 日時不明</span></div><div class="art-body"><p>以下、ご指定の形式で記事を要約します。提供された情報が限られているため、記事タイトルと本文の冒頭1文から最大限の推測を交え、映画批評の文脈に沿って記述しています。</p></div></div>
-<div class="art"><div class="art-ttl"><a href="https://www.indiewire.com/news/events/indiewire-usg-consider-this-emmy-event-1235190838/" target="_blank" style="color:#6a1b9a">Celebrate the Craft of Television and the Importance of Mentorship at IndieWire and Universal Studio Group’s Consider This Event</a></div><div class="art-meta"><span>IndieWire</span><span>📅 日時不明</span></div><div class="art-body"><p>以下にIndieWireの記事の要約を記述します。</p></div></div>
+<div class="sec"><div class="sec-hd" style="background:#f3e5f5;border:1px solid #e1bee7;color:#6a1b9a">🎬 映画・映像芸術</div><div class="art"><div class="art-ttl"><a href="https://www.filmcomment.com/blog/being-yourself-george-clooney/" target="_blank" style="color:#6a1b9a">Being Yourself: George Clooney</a></div><div class="art-meta"><span>Film Comment</span><span>📅 2026年4月27日 14:22 UTC</span></div><div class="art-body"><p>以下、ご指定の形式で記事を要約します。提供された情報が限られているため、記事タイトルと本文の冒頭1文から最大限の推測を交え、映画批評の文脈に沿って記述しています。</p></div><div class="art-ft"><div class="stars" data-url="https://www.filmcomment.com/blog/being-yourself-george-clooney/" data-title="Being Yourself: George Clooney" data-src="Film Comment" data-date="2026-04-27"><span class="star" data-n="1">★</span><span class="star" data-n="2">★</span><span class="star" data-n="3">★</span><span class="star" data-n="4">★</span><span class="star" data-n="5">★</span></div></div></div>
+<div class="art"><div class="art-ttl"><a href="https://www.indiewire.com/news/events/indiewire-usg-consider-this-emmy-event-1235190838/" target="_blank" style="color:#6a1b9a">Celebrate the Craft of Television and the Importance of Mentorship at IndieWire and Universal Studio Group’s Consider This Event</a></div><div class="art-meta"><span>IndieWire</span><span>📅 2026年4月27日 21:34 UTC</span></div><div class="art-body"><p>以下にIndieWireの記事の要約を記述します。</p></div><div class="art-ft"><div class="stars" data-url="https://www.indiewire.com/news/events/indiewire-usg-consider-this-emmy-event-1235190838/" data-title="Celebrate the Craft of Television and the Importance of Mentorship at IndieWire " data-src="IndieWire" data-date="2026-04-27"><span class="star" data-n="1">★</span><span class="star" data-n="2">★</span><span class="star" data-n="3">★</span><span class="star" data-n="4">★</span><span class="star" data-n="5">★</span></div></div></div>
 </div>
 </main>
+<script>
+const _RK='digest_ratings';
+function _lr(){try{return JSON.parse(localStorage.getItem(_RK)||'{}')}catch(e){return{}}}
+function _sv(url,r,t,s,d){const m=_lr();if(r===0)delete m[url];else m[url]={rating:r,title:(t||'').substring(0,80),source:s,date:d};localStorage.setItem(_RK,JSON.stringify(m))}
+function _us(el,n){el.querySelectorAll('.star').forEach(s=>{s.classList.toggle('on',parseInt(s.dataset.n)<=n)})}
+function initStars(){
+  const m=_lr();
+  document.querySelectorAll('.stars').forEach(el=>{
+    const url=el.dataset.url;
+    if(m[url])_us(el,m[url].rating);
+    el.addEventListener('mouseleave',()=>_us(el,(m[url]||{}).rating||0));
+    el.querySelectorAll('.star').forEach(s=>{
+      const n=parseInt(s.dataset.n);
+      s.addEventListener('mouseenter',()=>_us(el,n));
+      s.addEventListener('click',e=>{
+        e.preventDefault();e.stopPropagation();
+        const cur=(m[url]||{}).rating||0,nr=cur===n?0:n;
+        _sv(url,nr,el.dataset.title,el.dataset.src,el.dataset.date);
+        if(nr)m[url]={rating:nr};else delete m[url];
+        _us(el,nr);
+      });
+    });
+  });
+}
+function exportRatings(){
+  const m=_lr(),cnt=Object.keys(m).length;
+  if(!cnt){alert('評価データがありません。★を付けてからエクスポートしてください。');return;}
+  const blob=new Blob([JSON.stringify(m,null,2)],{type:'application/json'});
+  const u=URL.createObjectURL(blob);
+  const a=document.createElement('a');
+  a.href=u;a.download='ratings.json';document.body.appendChild(a);a.click();
+  document.body.removeChild(a);URL.revokeObjectURL(u);
+  alert(cnt+'件の評価をエクスポートしました。scripts/ratings.json として保存してください。');
+}
+document.addEventListener('DOMContentLoaded',initStars);
+</script>
 </body>
 </html>
